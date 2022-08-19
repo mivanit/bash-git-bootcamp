@@ -780,16 +780,61 @@ git repositories. We will be using GitHub in this tutorial.
 
 \includegraphics{mermaid-images/20b80f24a3a6ddcdc2db54e00763d5117b2df660.png}
 
-\includegraphics{mermaid-images/20b80f24a3a6ddcdc2db54e00763d5117b2df660.png}
+\hypertarget{branching}{%
+\subsubsection{branching}\label{branching}}
+
+When you're working on code with other people, want a persistent version
+of your code that is always functional, or otherwise need multiple
+versions of your code, branches are your friend. Git handles history as
+a ``tree'', where the main trunk is called \texttt{main} (somtimes
+\texttt{master} on older systems), and you can branch off at any commit.
+After making changes, you can then re-merge the branch
+
+\includegraphics{mermaid-images/74e31f8c420d1a7efbaf236e6b27b99455a87800.png}
+
+key commands:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ branch} see the active branches
+\item
+  \texttt{git\ branch\ \{name\}} create a new branch
+\item
+  \texttt{git\ checkout\ \{name\}} switch to a branch
+\end{itemize}
+
+merging branches in the command line is possible, but I'll be covering
+how to do it in the github client
 
 \hypertarget{github}{%
 \subsection{github}\label{github}}
+
+Github is a platform for hosting git repositories. It is free, and has a
+lot of features. You can find other peoples's code, ``fork'' it (make a
+copy that belongs to you), make changes, and then merge your changes
+into the original repository. It also acts as a sort of social network
+for anything code-related, and having some open source projects up on
+your github can be a great way to stand out to employers.
+
+The main thing to know about what github adds is \textbf{Pull
+Requests}:\\
+A pull request ``pulls'' changes from one branch onto another branch --
+this terminology can be confusing, but in the interface the ``source''
+branch is on the right and the ``target'' branch is on the left.
+
+Github also supports various CI/CD features, which let you automatically
+run code upon certain actions, like creating a pull request to the main
+branch. These are beyond the scope of this bootcamp, but I'm happy to
+chat about them sometime.
 
 \hypertarget{branches}{%
 \subsection{branches}\label{branches}}
 
 \hypertarget{assignment}{%
 \section{Assignment}\label{assignment}}
+
+(try to do this all in the command line)
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -799,6 +844,31 @@ git repositories. We will be using GitHub in this tutorial.
 \item
   go to \href{https://github.com}{github.com} and create an account if
   you don't have one
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    log in to github on your system. this will vary depending on your
+    OS, and you may have to generate a token on the website
+  \end{enumerate}
+\item
+  fork and clone your fork of the repository
+  \url{https://github.com/mivanit/bash-git-bootcamp}
+\item
+  change to the ``user-dev'' branch
+\item
+  navigate to the ``userdata'' folder
+\item
+  create and enter folder with your mines username
+\item
+  make some changes here -- write a script, add a file, whatever you
+  want
+\item
+  add, commit, and push your changes
+\item
+  merge your changes with the \texttt{user-dev} branch on my repository
 \end{enumerate}
 
 \hypertarget{takeaways}{%
@@ -819,8 +889,18 @@ git repositories. We will be using GitHub in this tutorial.
 \begin{itemize}
 \tightlist
 \item
+  \href{https://git-scm.com/doc}{git docs}
+\item
+  \href{https://devdocs.io/bash/}{bash docs}
+\item
   \href{https://oit.ua.edu/wp-content/uploads/2020/12/Linux_bash_cheat_sheet-1.pdf}{bash
-  cheat sheet}
+  cheat sheet} (there are many online)
+\item
+  \href{https://pandoc.org/MANUAL.html}{pandoc}
+\item
+  how to use git in the command line is good to know, but there are many
+  graphical interfaces for it. I reccomend
+  \href{https://desktop.github.com}{GitHub Desktop}
 \end{itemize}
 
 \printbibliography

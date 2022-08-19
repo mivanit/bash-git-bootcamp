@@ -312,11 +312,23 @@ gitGraph
 ```
 
 
+key commands:
+
+- `git branch` see the active branches
+- `git branch {name}` create a new branch
+- `git checkout {name}` switch to a branch
+
+merging branches in the command line is possible, but I'll be covering how to do it in the github client
 
 
 ## github
 
+Github is a platform for hosting git repositories. It is free, and has a lot of features. You can find other peoples's code, "fork" it (make a copy that belongs to you), make changes, and then merge your changes into the original repository. It also acts as a sort of social network for anything code-related, and having some open source projects up on your github can be a great way to stand out to employers.
 
+The main thing to know about what github adds is **Pull Requests**:  
+A pull request "pulls" changes from one branch onto another branch -- this terminology can be confusing, but in the interface the "source" branch is on the right and the "target" branch is on the left.
+
+Github also supports various CI/CD features, which let you automatically run code upon certain actions, like creating a pull request to the main branch. These are beyond the scope of this bootcamp, but I'm happy to chat about them sometime.
 
 
 
@@ -325,8 +337,18 @@ gitGraph
 
 # Assignment
 
+(try to do this all in the command line)
+
 1. install bash and git, if you haven't already
 2. go to [github.com](https://github.com) and create an account if you don't have one
+	3. log in to github on your system. this will vary depending on your OS, and you may have to generate a token on the website
+4. fork and clone your fork of the repository [https://github.com/mivanit/bash-git-bootcamp](https://github.com/mivanit/bash-git-bootcamp)
+5. change to the "user-dev" branch
+6. navigate to the "userdata" folder
+7. create and enter folder with your mines username
+8. make some changes here -- write a script, add a file, whatever you want
+9. add, commit, and push your changes
+10. merge your changes with the `user-dev` branch on my repository
 
 
 
@@ -336,12 +358,13 @@ gitGraph
 - git and github will prevent you from ever losing your code
 
 
-
 # Resources
 
-- [bash cheat sheet](https://oit.ua.edu/wp-content/uploads/2020/12/Linux_bash_cheat_sheet-1.pdf)
-
-
+- [git docs](https://git-scm.com/doc)
+- [bash docs](https://devdocs.io/bash/)
+- [bash cheat sheet](https://oit.ua.edu/wp-content/uploads/2020/12/Linux_bash_cheat_sheet-1.pdf) (there are many online)
+- [pandoc](https://pandoc.org/MANUAL.html)
+- how to use git in the command line is good to know, but there are many graphical interfaces for it. I reccomend [GitHub Desktop](https://desktop.github.com) 
 
 
 
