@@ -1,15 +1,11 @@
 ---
 title: Git and Unix Bootcamp
-desc: ''
-id: wcwlttm4mzr4nzpbbyepq0b
-created: 1660678112180
-updated: 1660929114262
+author: Michael Ivanitskiy (mivanits@mines.edu)
 __defaults__:
   filters: 
   - $FILTERS$/mermaid.py
+linkcolor: blue
 ---
-
-now located at `/f/projects/fun/bash-git-bootcamp` and https://github.com/mivanit/bash-git-bootcamp
 
 # "Syllabus"
 
@@ -37,6 +33,7 @@ now located at `/f/projects/fun/bash-git-bootcamp` and https://github.com/mivani
 # Introduction
 
 Some definitions:
+
 - an **Operating System** is software that manages software and other hardware for a computer, and provides common services. 
 	- MacOS, Windows, Android, iOS, and the various Linux distributions (Ubuntu, Mint, Arch, etc) are all operating systems
 - a **command-line shell** is a program that interprets a language that allows the user to have access to operating system services
@@ -66,7 +63,7 @@ if you're prompted during installation to select a default text editor for editi
 
 Windows comes with both the `cmd` shell and PowerShell, but you'll want to install bash. Navigate to [gitforwindows.org](https://gitforwindows.org), and download and run the installer.
 
-} NOTE: When prompted about line endings, select "Check out as-is, commit LF"
+> NOTE: When prompted about line endings, select "Check out as-is, commit LF"
 
 
 when the installation is complete, start up "git bash" from the start menu
@@ -292,6 +289,29 @@ gitGraph
 	commit id: "implemented a feature"
 	commit id: "fixed a bug"
 ```
+
+
+### branching
+
+When you're working on code with other people, want a persistent version of your code that is always functional, or otherwise need multiple versions of your code, branches are your friend. Git handles history as a "tree", where the main trunk is called `main` (somtimes `master` on older systems), and you can branch off at any commit. After making changes, you can then re-merge the branch
+
+```mermaid
+gitGraph
+	commit
+	commit
+	branch develop
+	commit
+	commit
+	commit
+	checkout main
+	commit
+	commit
+	merge develop
+	commit
+	commit
+```
+
+
 
 
 ## github
