@@ -1,3 +1,11 @@
 readme.pdlog
 readme.synctex.gz
 _pandoc_defaults.*
+testdir/
+
+*.aux
+*.bcf
+*.run.xml
+
+junk/dontaddme/**
+# !junk/dontaddme/help.txt
