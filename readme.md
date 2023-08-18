@@ -48,7 +48,7 @@ Now, some history:
 - "Linux" is a family of open-source "unix-like" operating systems, and most "serious" computing is done on Linux today.
 - "git" is a version control system originally created to manage the development of the Linux kernel, but has been widely adopted in all areas of software and is the de-facto standard for version control
 
-![Evolution of Unix and Unix like systems (credit: Wikipedia)](/assets/images/unix-evolution.png)
+![Evolution of Unix and Unix like systems (credit: Wikipedia)](images/unix-evolution.png)
 
 # Installing bash and git
 
@@ -246,6 +246,8 @@ git is a distributed version control system. what does "git" stand for? the read
 > - "Global information tracker": you're in a good mood, and it actually
 > - works for you. Angels sing, and a light suddenly fills the room. 
 > - "Goddamn idiotic truckload of ****": when it breaks.
+
+![](images/git-flow.png)
 
 
 ## why use git?
