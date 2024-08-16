@@ -148,7 +148,7 @@ in the unix philosophy, programs should input and output streams of text.
 
 - a program can read input from `stdin`, which is equivalent to prompting the user for some text
 - a program writes its output to `stdout`
-- a program writes any errors or warnings to `stdin`
+- a program writes any errors or warnings to `stderr`
 
 For modern software, this isn't always the dominant paradigm, but it can still come in handy. The following commands can be used redirecting the outputs of a program:
 
